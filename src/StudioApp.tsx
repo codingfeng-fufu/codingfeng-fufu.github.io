@@ -5,26 +5,9 @@ import "./studio.css";
 const names=["技术雷达知识库","FinCoder","OpenFusionKGQA","LLM Wiki","Agent Learning Assistant"];
 const areas=[{icon:Bot,title:"AI agents",text:"Tool selection, executable plans, repair cycles, and persistent memory."},{icon:Network,title:"RAG & knowledge graphs",text:"Graph construction, evidence retrieval, and citation-grounded answers."},{icon:BookOpen,title:"Knowledge systems",text:"Local-first research workspaces with linked sources and maintainable indexes."}];
 export default function StudioApp(){
- const [dark,setDark]=useState(false);const [image,setImage]=useState<string|null>(null);const [filter,setFilter]=useState("All");const [typed,setTyped]=useState("");const [deleting,setDeleting]=useState(false);
- useEffect(()=>{
-   const phrase="Turning research into reliable systems.";
-   if(matchMedia("(prefers-reduced-motion: reduce)").matches){setTyped(phrase);return}
-   const done=typed===phrase;
-   const id=window.setTimeout(()=>{
-     if(!deleting&&done){setDeleting(true);return}
-     if(deleting){const next=phrase.slice(0,Math.max(0,typed.length-1));setTyped(next);if(!next)setDeleting(false)}
-     else setTyped(phrase.slice(0,typed.length+1));
-   },done&&!deleting?2200:deleting?42:78);
-   return()=>window.clearTimeout(id);
- },[typed,deleting]);
- useEffect(()=>{
-   const items=Array.from(document.querySelectorAll<HTMLElement>(".studio .st-reveal"));
-   if(!items.length)return;
-   if(matchMedia("(prefers-reduced-motion: reduce)").matches){items.forEach(el=>el.classList.add("st-visible"));return;}
-   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("st-visible");observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:"0px 0px -45px"});
-   items.forEach((el,index)=>{el.style.setProperty("--reveal-delay",`${Math.min(index%6,5)*70}ms`);observer.observe(el)});
-   return()=>observer.disconnect();
- },[]);
+ const [dark,setDark]=useState(false);const [image,setImage]=useState<string|null>(null);const [filter,setFilter]=useState("All");const [typed,setTyped]=useState("");const [deleting,setDeleting]=useState(false);const [phraseIndex,setPhraseIndex]=useState(0);
+ const terminalPhrases=["Turning research into reliable systems.","Tracing every answer back to evidence.","Building agents that know when to verify.","Connecting graphs, memory, and action."];
+ useEffect(()=>{const phrase=terminalPhrases[phraseIndex];if(matchMedia("(prefers-reduced-motion: reduce)").matches){setTyped(phrase);return}const done=typed===phrase;const id=window.setTimeout(()=>{if(!deleting&&done){setDeleting(true);return}if(deleting){const next=phrase.slice(0,Math.max(0,typed.length-1));setTyped(next);if(!next){setDeleting(false);setPhraseIndex((phraseIndex+1)%terminalPhrases.length)}}else setTyped(phrase.slice(0,typed.length+1))},done&&!deleting?2200:deleting?42:78);return()=>window.clearTimeout(id)},[typed,deleting,phraseIndex]);
  useEffect(()=>{if(!image)return;const previous=document.body.style.overflow;document.body.style.overflow="hidden";const close=(e:KeyboardEvent)=>{if(e.key==="Escape")setImage(null)};window.addEventListener("keydown",close);return()=>{document.body.style.overflow=previous;window.removeEventListener("keydown",close)}},[image]);
  const shown=names.filter(n=>filter==="All"||filter==="Knowledge systems"&&["技术雷达知识库","LLM Wiki"].includes(n)||filter==="Agents & RAG"&&["FinCoder","OpenFusionKGQA","Agent Learning Assistant"].includes(n));
  return <div className={`studio ${dark?"studio-dark":""}`} id="top">
