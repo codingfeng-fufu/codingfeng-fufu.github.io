@@ -5,8 +5,18 @@ import "./studio.css";
 const names=["技术雷达知识库","FinCoder","OpenFusionKGQA","LLM Wiki","Agent Learning Assistant"];
 const areas=[{icon:Bot,title:"AI agents",text:"Tool selection, executable plans, repair cycles, and persistent memory."},{icon:Network,title:"RAG & knowledge graphs",text:"Graph construction, evidence retrieval, and citation-grounded answers."},{icon:BookOpen,title:"Knowledge systems",text:"Local-first research workspaces with linked sources and maintainable indexes."}];
 export default function StudioApp(){
- const [dark,setDark]=useState(false);const [image,setImage]=useState<string|null>(null);const [filter,setFilter]=useState("All");const [typed,setTyped]=useState("");
- useEffect(()=>{const phrase="Turning research into reliable systems.";if(matchMedia("(prefers-reduced-motion: reduce)").matches){setTyped(phrase);return}let i=0;const id=setInterval(()=>{setTyped(phrase.slice(0,++i));if(i>=phrase.length)clearInterval(id)},75);return()=>clearInterval(id)},[]);
+ const [dark,setDark]=useState(false);const [image,setImage]=useState<string|null>(null);const [filter,setFilter]=useState("All");const [typed,setTyped]=useState("");const [deleting,setDeleting]=useState(false);
+ useEffect(()=>{
+   const phrase="Turning research into reliable systems.";
+   if(matchMedia("(prefers-reduced-motion: reduce)").matches){setTyped(phrase);return}
+   const done=typed===phrase;
+   const id=window.setTimeout(()=>{
+     if(!deleting&&done){setDeleting(true);return}
+     if(deleting){const next=phrase.slice(0,Math.max(0,typed.length-1));setTyped(next);if(!next)setDeleting(false)}
+     else setTyped(phrase.slice(0,typed.length+1));
+   },done&&!deleting?2200:deleting?42:78);
+   return()=>window.clearTimeout(id);
+ },[typed,deleting]);
  useEffect(()=>{
    const items=Array.from(document.querySelectorAll<HTMLElement>(".studio .st-reveal"));
    if(!items.length)return;
