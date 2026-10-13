@@ -23,8 +23,20 @@ const papers = [
 function TypingLine(){
   const phrases=["Building auditable AI agents.","Grounding GraphRAG with evidence.","Turning research into reliable systems."];
   const [index,setIndex]=useState(0); const [text,setText]=useState(""); const [deleting,setDeleting]=useState(false);
-  useEffect(()=>{const target=phrases[index]; const delay=deleting?55:95; const timer=setTimeout(()=>{if(!deleting){const next=target.slice(0,text.length+1);setText(next);if(next===target)setDeleting(true);}else{const next=target.slice(0,Math.max(0,text.length-1));setText(next);if(next.length===0){setDeleting(false);setIndex((index+1)%phrases.length);}}},text===target&&!deleting?1400:delay);return()=>clearTimeout(timer)},[index,text,deleting]);
-  return <p className="typing-line" aria-live="polite">{text}<span className="typing-cursor">|</span></p>;
+  useEffect(()=>{
+    if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){setText(phrases[2]);return;}
+    const target=phrases[index];
+    const delay=text===target&&!deleting?2600:deleting?35:text.length===0?450:85;
+    const timer=setTimeout(()=>{
+      if(!deleting&&text===target){setDeleting(true);return;}
+      if(deleting){
+        const next=target.slice(0,Math.max(0,text.length-1));setText(next);
+        if(!next){setDeleting(false);setIndex((index+1)%phrases.length);}
+      }else setText(target.slice(0,text.length+1));
+    },delay);
+    return()=>clearTimeout(timer);
+  },[index,text,deleting]);
+  return <p className="typing-line" aria-label="Building auditable AI agents. Grounding GraphRAG with evidence. Turning research into reliable systems."><span className="typing-text" aria-hidden="true">{text}<span className="typing-cursor"/></span></p>;
 }
 
 function ResearchGraph(){const ref=useRef<HTMLDivElement>(null);const [detail,setDetail]=useState<string|null>(null);useEffect(()=>{if(!ref.current)return;const nodes=[['core','Reliable AI Agents','core'],['graphrag','GraphRAG','method'],['agents','Agent Systems','method'],['verify','Evidence Verification','method'],['radar','RadarLoom','system'],['fin','FinCoder','system'],['open','OpenFusionKGQA','system'],['wiki','LLM Wiki','system'],['facts','Knowledge Bases','evidence']];const colors={core:'#53d1d6',method:'#65a9ee',system:'#e3aa61',evidence:'#e48199'} as Record<string,string>;const data={nodes:nodes.map(([id,label,type],i)=>({id,data:{label,type},style:{x: i===0?0:Math.cos((i-1)*Math.PI/4)*260,y:i===0?0:Math.sin((i-1)*Math.PI/4)*170,size:i===0?94:68,fill:type==='core'?'#173f5f':'#142a3a',stroke:colors[type],lineWidth:2,shadowColor:colors[type],shadowBlur:14,labelText:label,labelFill:'#e6f4f5',labelFontSize:i===0?15:11}})),edges:nodes.slice(1).map(([id],i)=>({id:`e-${id}`,source:'core',target:id,type:i%2?'quadratic':'line',data:{relation:['grounds','routes','verifies','organizes','calculates','stores','supports','retrieves'][i]},style:{stroke:colors[nodes[i+1][2]],lineWidth:1.5,opacity:.72,curveOffset:(i%2?1:-1)*28,labelText:['grounds','routes','verifies','organizes','calculates','stores','supports','retrieves'][i],labelFill:'#8eb6c0',labelFontSize:10,labelBackgroundFill:'#071827',labelBackgroundOpacity:.88}}))};const graph=new Graph({container:ref.current,autoFit:'view',animation:true,zoomRange:[.55,2.5],data,behaviors:['drag-canvas','zoom-canvas','drag-element','hover-activate'],node:{type:'circle'},edge:{type:'quadratic',style:{endArrow:true}},layout:{type:'force',preventOverlap:true,collideStrength:1,linkDistance:190,gravity:0.08,alphaDecay:0.04},plugins:[]});graph.on('node:click',(e:any)=>setDetail(e.target?.id||null));graph.render();return()=>graph.destroy()},[]);return <section id="knowledge-graph" className="academic-section research-graph-section"><div className="section-title"><h2>Research Knowledge Graph</h2><span>drag · zoom · explore</span></div><div className="g6-wrap"><div ref={ref} className="g6-canvas"/>{detail&&<div className="g6-detail"><button onClick={()=>setDetail(null)}>×</button><strong>{detail}</strong><span>Research node</span></div>}</div></section>}
