@@ -50,3 +50,46 @@
 .kg-edge.connected rect{stroke:#d2ad7066}
 .kg-edge text{fill:#a4b8aa;stroke:none;font-size:10px}
 .kg-edge.connected text{fill:#ddc699}
+
+/* Recognition: editorial hierarchy with restrained medal colors. */
+.st-honors{padding:26px;position:relative;overflow:hidden}
+.honor-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.honor-heading h3{font-size:1.3rem;margin:0;letter-spacing:-.025em}.honor-heading>svg{color:var(--accent);opacity:.8}
+.honor-summary{display:grid;grid-template-columns:1fr 1fr;margin:22px 0;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.honor-summary>div+div{padding-left:20px;border-left:1px solid var(--line)}.honor-summary strong{display:block;font:400 2.2rem Georgia,serif;line-height:1;color:var(--accent)}.honor-summary span{display:block;font-size:.64rem;color:var(--muted);margin-top:8px}
+.st-honors .honor-grid{grid-template-columns:1fr;gap:12px}.honor-grid article{display:flex;align-items:center;gap:15px;padding:16px;transition:transform .2s,border-color .2s,box-shadow .2s}.honor-grid article:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 8px 20px #00000012}.honor-grid article>div:nth-child(2){min-width:0}.honor-grid strong{font-size:.6rem;letter-spacing:.12em}.honor-grid span{font-size:.85rem;margin-top:5px}.honor-grid small{font-size:.67rem;margin-top:5px}
+.honor-research{background:linear-gradient(120deg,var(--soft),var(--surface))!important;border-left:3px solid var(--accent)!important}.honor-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;border:1px solid var(--line);color:var(--accent);flex-shrink:0}.honor-grid .honor-seal{margin-left:auto;font:11px ui-monospace,monospace;color:var(--muted);align-self:start}
+.honor-medal{width:46px;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;flex-shrink:0;border-radius:10px;border:1px solid currentColor;background:color-mix(in srgb,currentColor 8%,transparent)}.honor-medal b{font:600 12px ui-monospace,monospace}.honor-gold .honor-medal{color:#b29458}.honor-silver .honor-medal{color:#91a4a5}.honor-bronze .honor-medal{color:#b5876c}
+@media(prefers-reduced-motion:reduce){.honor-grid article{transition:none}.honor-grid article:hover{transform:none}}
+
+/* Balanced education and recognition columns, with a personal footer illustration. */
+.st-background{grid-template-columns:1.15fr 1fr;gap:40px}.st-honors{padding:20px}.st-honors .st-eyebrow{font-size:.58rem}.honor-heading h3{font-size:1.1rem}.honor-summary{margin:12px 0;padding:10px 0}.honor-summary>div{display:flex;align-items:center;gap:10px}.honor-summary strong{font-size:1.6rem}.honor-summary span{margin:0;font-size:.6rem;max-width:85px;line-height:1.4}.st-honors .honor-grid{grid-template-columns:1fr 1fr;gap:8px}.honor-grid article{padding:11px;gap:9px;align-items:flex-start}.honor-grid strong{font-size:.5rem;letter-spacing:.06em}.honor-grid span{font-size:.71rem;line-height:1.4}.honor-grid small{font-size:.57rem;line-height:1.4}.honor-icon,.honor-medal{width:30px;min-height:38px;height:38px;border-radius:7px}.honor-icon svg{width:17px}.honor-medal svg{width:14px;height:14px}.honor-medal b{font-size:10px}.honor-grid .honor-seal{display:none}
+.st-contact-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;align-items:center;gap:50px}.st-contact-copy>p:not(.st-eyebrow){font-size:.9rem;color:var(--muted)}.st-mascot{display:block;width:270px;height:270px;object-fit:contain;filter:drop-shadow(0 12px 20px #263c3018)}.st-footer-bottom{margin-top:35px}
+@media(max-width:850px){.st-background{grid-template-columns:1fr;gap:28px}.st-contact-layout{gap:20px;grid-template-columns:minmax(0,1fr) 220px}.st-mascot{width:220px;height:220px}}
+@media(max-width:600px){.st-contact-layout{grid-template-columns:1fr;gap:24px}.st-mascot{justify-self:center;width:240px;height:240px}.st-honors{padding:16px}.honor-summary>div+div{padding-left:12px}}
+/* Recognition shares the surrounding page background. */
+.st-honors,.st-honors .honor-grid article,.st-honors .honor-research{background:var(--bg)!important}
+/* Personal IP and subtle contact animation. */
+.st-ip-portrait .st-portrait-frame{border-radius:120px 120px 18px 18px;transform:rotate(2deg);background:var(--surface);padding:14px 14px 0;box-shadow:0 20px 55px #263c3010}
+.st-ip-portrait .st-portrait-frame>img{object-fit:contain;height:330px;border-radius:0;filter:drop-shadow(0 10px 18px #263c3015)}
+.st-mascot-scene{position:relative;width:270px;height:290px;display:grid;place-items:center}
+.st-mascot-scene .st-mascot{animation:ip-float 5s ease-in-out infinite;transition:rotate .4s ease;transform-origin:50% 80%}
+.st-mascot-scene:hover .st-mascot{rotate:-3deg}
+.st-bubble{position:absolute;bottom:20%;width:12px;height:12px;border:1px solid #8faecc88;border-radius:50%;background:radial-gradient(circle at 30% 25%,#ffffffaa,transparent 48%);pointer-events:none;opacity:0;animation:ip-bubble 7s ease-in-out infinite}
+.bubble-one{left:8%}.bubble-two{right:8%;width:18px;height:18px;animation-delay:2.4s}.bubble-three{left:28%;width:8px;height:8px;animation-delay:4.8s}
+@keyframes ip-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes ip-bubble{0%,15%{opacity:0;transform:translateY(0)}30%{opacity:.65}80%{opacity:.35}100%{opacity:0;transform:translateY(-165px) translateX(12px)}}
+@media(max-width:850px){.st-mascot-scene{width:220px;height:240px}}
+@media(max-width:600px){.st-mascot-scene{justify-self:center;width:240px;height:260px}}
+@media(prefers-reduced-motion:reduce){.st-mascot-scene .st-mascot,.st-bubble{animation:none!important;transition:none!important}.st-mascot-scene:hover .st-mascot{rotate:0deg}.st-bubble{display:none}}
+
+.st-mascot-switch{position:relative;border:0;background:none;padding:0;display:grid;justify-items:center;width:100%;border-radius:18px}.st-mascot-transition{display:block;animation:mascot-reveal .45s ease both}.st-mascot-caption{font-size:.7rem;color:var(--accent);text-align:center;line-height:1.5;margin-top:5px}.st-mascot-caption small{display:block;font-size:.58rem;color:var(--muted);margin-top:4px}.st-mascot-scene{height:330px}.st-mascot-switch:focus-visible{outline:2px solid var(--accent);outline-offset:6px}.st-bubble{z-index:1}
+@keyframes mascot-reveal{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:850px){.st-mascot-scene{height:290px}}@media(max-width:600px){.st-mascot-scene{height:310px}}
+@media(prefers-reduced-motion:reduce){.st-mascot-transition{animation:none}}
+/* Circular frame for the interactive mascot scenes. */
+.st-mascot-transition{width:270px;height:270px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--surface);overflow:hidden;box-shadow:0 12px 30px #263c300c}
+.st-mascot-transition .st-mascot{width:92%;height:92%;object-fit:contain}
+.st-mascot-caption{margin-top:12px}
+@media(max-width:850px){.st-mascot-transition{width:220px;height:220px}}
+@media(max-width:600px){.st-mascot-transition{width:240px;height:240px}}
+/* Keep the Studio navigation visible while scrolling. */
+.studio>.st-nav{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
