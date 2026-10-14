@@ -42,3 +42,11 @@
 .kg-node circle{filter:drop-shadow(0 0 5px #9bbfa544) drop-shadow(0 5px 9px #0005);stroke:#eff8efaa}.kg-node:nth-of-type(3n) circle{filter:drop-shadow(0 0 6px #d2ad704d) drop-shadow(0 5px 9px #0005)}.kg-node:nth-of-type(3n+1) circle{filter:drop-shadow(0 0 6px #8fb9bf55) drop-shadow(0 5px 9px #0005)}.kg-node.selected circle{filter:drop-shadow(0 0 10px #fff0b8cc) drop-shadow(0 0 22px #d2ad7066);stroke:#fff4d2;stroke-width:3}
 /* Deeper node fills keep the map sophisticated against the ink background. */
 .kg-node.kind-core circle{fill:#735c3c!important;stroke:#d7ae6e!important}.kg-node.kind-method circle{fill:#35554a!important;stroke:#8fb9a2!important}.kg-node.kind-project circle{fill:#31515b!important;stroke:#85b8c3!important}.kg-node.kind-paper circle{fill:#513d4b!important;stroke:#c298ae!important}.kg-node.kind-tech circle{fill:#413d63!important;stroke:#aaa4df!important}.kg-node text{fill:#eef5ed;stroke:#10171699;stroke-width:2px;paint-order:stroke}.kg-node.selected.kind-core circle{fill:#a5824a!important}.kg-node.selected.kind-method circle{fill:#4b7966!important}.kg-node.selected.kind-project circle{fill:#437784!important}.kg-node.selected.kind-paper circle{fill:#76556b!important}.kg-node.selected.kind-tech circle{fill:#615b96!important}
+
+/* Directed relationship paths and quiet label badges. */
+.kg-edge-path{fill:none;stroke:#7f9e8b80;stroke-width:1.4;transition:stroke .2s,stroke-width .2s;vector-effect:non-scaling-stroke}
+.kg-edge.connected .kg-edge-path{stroke:#d2ad70bf;stroke-width:1.9}
+.kg-edge rect{fill:#101716e8;stroke:#7f9e8b33;stroke-width:.7}
+.kg-edge.connected rect{stroke:#d2ad7066}
+.kg-edge text{fill:#a4b8aa;stroke:none;font-size:10px}
+.kg-edge.connected text{fill:#ddc699}
