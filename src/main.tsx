@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 async function bootstrap() {
   const view = new URLSearchParams(window.location.search).get("view");
   const graph = view === "graph";
-  const studio = view === "studio";
+  const studio = view === null || view === "studio";
   const creative = new URLSearchParams(window.location.search).get("view") === "lab";
   document.documentElement.classList.toggle("creative", creative);
   const { default: App } = graph ? await import("./KnowledgeGraphPage") : studio ? await import("./StudioApp") : creative
