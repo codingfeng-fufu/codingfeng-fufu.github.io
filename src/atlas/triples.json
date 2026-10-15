@@ -1,0 +1,806 @@
+[
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "has core research focus",
+    "object": "Knowledge Graphs",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "has research interest",
+    "object": "GraphRAG",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "has research interest",
+    "object": "Knowledge-grounded AI Agents",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Knowledge Graph Construction",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Knowledge Graph Fusion",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Knowledge Graph Verification",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Entity Resolution",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Relation Alignment",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Evidence-based Triple Verification",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Source Provenance",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Retrieval",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "studies",
+    "object": "Reasoning",
+    "source": "https://codingfeng-fufu.github.io/#about"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "showcases project",
+    "object": "RadarLoom",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "has type",
+    "object": "Personal Research Knowledge Base",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "has repository",
+    "object": "https://github.com/codingfeng-fufu/radar-loom",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "Markdown Knowledge Pages",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "Metadata Indexing",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "Explicit-link Graphs",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "Leiden Community Detection",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "Claude Code Workflows",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "Health Checks",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "Backups",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "uses mechanism or technology",
+    "object": "CI",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "supports",
+    "object": "Paper Notes",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "supports",
+    "object": "Technical Notes",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "supports",
+    "object": "Interview Workspace",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "supports",
+    "object": "Idea Lab",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "showcases project",
+    "object": "FinCoder",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "has type",
+    "object": "Auditable Quantitative QA System for Chinese Financial Statements",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "has repository",
+    "object": "https://github.com/codingfeng-fufu/IR-task2",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Tool-using Agent",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Typed Facts",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Decimal Arithmetic",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Append-only Audit Trail",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Unit Checks",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Accounting Scope Checks",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Independent Recomputation",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Repair and Refusal",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "FastAPI",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "JSONL",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "uses mechanism or technology",
+    "object": "Provenance DAG",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "supports",
+    "object": "PDF",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "supports",
+    "object": "Excel",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "supports",
+    "object": "Source Location Recording",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "supports",
+    "object": "Calculation History Recording",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "showcases project",
+    "object": "OpenFusionKGQA",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "has type",
+    "object": "Open-corpus Knowledge Graph Fusion and GraphRAG System",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "has repository",
+    "object": "https://github.com/codingfeng-fufu/OpenFusionKGQA",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Entity Resolution",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Relation Alignment",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Triple Quality Gate",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "JSON Graph Store",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Neo4j Graph Store",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Local Retrieval",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Global Retrieval",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Citation-grounded QA",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Evidence Support Scoring",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "uses mechanism or technology",
+    "object": "Graph Consistency Scoring",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "supports",
+    "object": "Document-to-graph Construction",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "supports",
+    "object": "Preservation of Rejected Triples and Rejection Reasons",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "supports",
+    "object": "Graph Inspection",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "supports",
+    "object": "Run Observability",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "showcases project",
+    "object": "LLM Wiki",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "has type",
+    "object": "Source-backed Long-term Memory Infrastructure for Coding Agents",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "has repository",
+    "object": "https://github.com/codingfeng-fufu/agent-wiki",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "Immutable Raw Sources",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "Linked Markdown Pages",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "Source Provenance",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "CLI",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "MCP",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "Dry-run Maintenance Plans",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "Health Checks",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "uses mechanism or technology",
+    "object": "Index Rebuilding",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "supports",
+    "object": "Cross-session Memory",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "supports",
+    "object": "Search",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "supports",
+    "object": "Query",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "supports",
+    "object": "Maintenance Plans",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "showcases project",
+    "object": "Agent Learning Assistant",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "has type",
+    "object": "Local-first Learning Environment for AI Agent Development",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "has repository",
+    "object": "https://github.com/codingfeng-fufu/agent-learning-assistant",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "FastAPI",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "React",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Vite",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Hybrid Retrieval",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Concept Graph",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Code Execution",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Learning Plans",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Web Search",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Long-term Memory",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "ReAct Agent",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "uses mechanism or technology",
+    "object": "Planning Graph",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "supports",
+    "object": "Learning Progress Tracking",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "supports",
+    "object": "User Profile",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "supports",
+    "object": "Episodic Memory",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "supports",
+    "object": "Stateful Learning Workflow",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "RadarLoom",
+    "predicate": "has personal contribution",
+    "object": "Designed a knowledge base with Markdown as the source of truth",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
+  },
+  {
+    "subject": "FinCoder",
+    "predicate": "has personal contribution",
+    "object": "Designed the boundary between model planning and program execution",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
+  },
+  {
+    "subject": "OpenFusionKGQA",
+    "predicate": "has personal contribution",
+    "object": "Built the document-to-graph pipeline",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
+  },
+  {
+    "subject": "LLM Wiki",
+    "predicate": "has personal contribution",
+    "object": "Maintained linked knowledge pages with preserved provenance",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=llm-wiki"
+  },
+  {
+    "subject": "Agent Learning Assistant",
+    "predicate": "has personal contribution",
+    "object": "Built a local workspace integrating retrieval, concept graphs, and learning plans",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=agent-learning-assistant"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has full title",
+    "object": "Routing by Contract: Evidence-Gated Skill Selection for Language Agents",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "submitted to",
+    "object": "CIKM 2026",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has submission status",
+    "object": "Accepted",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has research topic",
+    "object": "Evidence-gated Skill Selection for AI Agents",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has author",
+    "object": "Shouzheng Xu",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has author",
+    "object": "Zonglin Feng",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has author",
+    "object": "Yunqi Zhou",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has author",
+    "object": "Yaqing Li",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has author",
+    "object": "Jingyi Wu",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "accepted at",
+    "object": "CIKM 2026",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has co-first author",
+    "object": "Zonglin Feng",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has co-first author",
+    "object": "Shouzheng Xu",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Routing by Contract",
+    "predicate": "has paper PDF",
+    "object": "https://codingfeng-fufu.github.io/papers/routing-by-contract.pdf",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has full title",
+    "object": "EvidenceFirst: Evidence-State Monitoring for Auditable GraphRAG Systems",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "submitted to",
+    "object": "WISE 2026",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has submission status",
+    "object": "Accepted",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has research topic",
+    "object": "Evidence-state Monitoring for Auditable GraphRAG",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has author",
+    "object": "Zonglin Feng",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has author",
+    "object": "Shouzheng Xu",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has author",
+    "object": "Qicheng Zhao",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "accepted at",
+    "object": "WISE 2026",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has co-first author",
+    "object": "Zonglin Feng",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has co-first author",
+    "object": "Shouzheng Xu",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "EvidenceFirst",
+    "predicate": "has paper PDF",
+    "object": "https://codingfeng-fufu.github.io/papers/evidencefirst.pdf",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "TripleChecker",
+    "predicate": "has full title",
+    "object": "TripleChecker: Counterfactual Evidence Response for Construction-Time Knowledge Graph Admission",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "TripleChecker",
+    "predicate": "submitted to",
+    "object": "WSDM 2027",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "TripleChecker",
+    "predicate": "has submission status",
+    "object": "Submitted",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "TripleChecker",
+    "predicate": "has research topic",
+    "object": "Counterfactual Evidence Verification during Knowledge Graph Construction",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "TripleChecker",
+    "predicate": "has author",
+    "object": "Zonglin Feng",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Numerical Fact Graphs",
+    "predicate": "has full title",
+    "object": "Numerical Fact Graphs for Auditable Financial Question Answering: Evidence-Bounded Calculation and Failure Localization",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Numerical Fact Graphs",
+    "predicate": "submitted to",
+    "object": "COLING 2027",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Numerical Fact Graphs",
+    "predicate": "has submission status",
+    "object": "Submitted",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Numerical Fact Graphs",
+    "predicate": "has research topic",
+    "object": "Numerical Fact Graphs and Evidence-bounded Calculation for Financial QA",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Numerical Fact Graphs",
+    "predicate": "has author",
+    "object": "Zonglin Feng",
+    "source": "https://codingfeng-fufu.github.io/#publications"
+  }
+]
