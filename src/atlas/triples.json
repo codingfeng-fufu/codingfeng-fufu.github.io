@@ -164,114 +164,6 @@
   {
     "subject": "Zonglin Feng",
     "predicate": "showcases project",
-    "object": "FinCoder",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "has type",
-    "object": "Auditable Quantitative QA System for Chinese Financial Statements",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "has repository",
-    "object": "https://github.com/codingfeng-fufu/IR-task2",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Tool-using Agent",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Typed Facts",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Decimal Arithmetic",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Append-only Audit Trail",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Unit Checks",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Accounting Scope Checks",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Independent Recomputation",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Repair and Refusal",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "FastAPI",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "JSONL",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "uses mechanism or technology",
-    "object": "Provenance DAG",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "supports",
-    "object": "PDF",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "supports",
-    "object": "Excel",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "supports",
-    "object": "Source Location Recording",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "FinCoder",
-    "predicate": "supports",
-    "object": "Calculation History Recording",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
-    "subject": "Zonglin Feng",
-    "predicate": "showcases project",
     "object": "OpenFusionKGQA",
     "source": "https://codingfeng-fufu.github.io/?view=studio&project=openfusionkgqa"
   },
@@ -576,12 +468,6 @@
     "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
   },
   {
-    "subject": "FinCoder",
-    "predicate": "has personal contribution",
-    "object": "Designed the boundary between model planning and program execution",
-    "source": "https://codingfeng-fufu.github.io/?view=studio&project=fincoder"
-  },
-  {
     "subject": "OpenFusionKGQA",
     "predicate": "has personal contribution",
     "object": "Built the document-to-graph pipeline",
@@ -802,5 +688,53 @@
     "predicate": "has author",
     "object": "Zonglin Feng",
     "source": "https://codingfeng-fufu.github.io/#publications"
+  },
+  {
+    "subject": "Zonglin Feng",
+    "predicate": "showcases project",
+    "object": "Mini Coding Agent",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
+  },
+  {
+    "subject": "Mini Coding Agent",
+    "predicate": "has type",
+    "object": "Autonomous coding agent",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
+  },
+  {
+    "subject": "Mini Coding Agent",
+    "predicate": "has repository",
+    "object": "https://github.com/codingfeng-fufu/mini_coding_agent",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
+  },
+  {
+    "subject": "Mini Coding Agent",
+    "predicate": "uses mechanism or technology",
+    "object": "Python",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
+  },
+  {
+    "subject": "Mini Coding Agent",
+    "predicate": "uses mechanism or technology",
+    "object": "Tool-using Agent",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
+  },
+  {
+    "subject": "Mini Coding Agent",
+    "predicate": "supports",
+    "object": "Workspace inspection and editing",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
+  },
+  {
+    "subject": "Mini Coding Agent",
+    "predicate": "supports",
+    "object": "Verification and bounded repair",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
+  },
+  {
+    "subject": "Mini Coding Agent",
+    "predicate": "supports",
+    "object": "CLI, Web UI and Python API",
+    "source": "https://codingfeng-fufu.github.io/?view=studio&project=mini-coding-agent"
   }
 ]
