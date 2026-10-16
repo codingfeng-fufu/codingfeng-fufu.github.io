@@ -145,3 +145,21 @@
 .detail-source-list{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:24px}.detail-source-list a{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-size:.76rem;text-decoration:none}
 .project-mini-coding-agent{--accent:#d39b76}
 @media(max-width:650px){.detail-result-grid{grid-template-columns:1fr}.detail-example{padding:22px}.detail-results{padding:45px 0}.detail-rail{gap:20px}.detail-result-grid>a{padding:22px}}
+
+/* A quiet, once-per-session greeting using the existing personal mascot. */
+.welcome-intro{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:#f7f8f6;color:#243432;opacity:1;transition:opacity .45s ease;isolation:isolate}
+.welcome-intro.is-leaving{opacity:0;pointer-events:none}
+.welcome-signature{position:absolute;top:30px;left:clamp(24px,5vw,72px);font-size:.8rem;font-weight:650;letter-spacing:.08em;color:#667571}
+.welcome-content{text-align:center;padding:32px;transform:translateY(-12px)}
+.welcome-content>img{display:block;width:clamp(170px,24vw,250px);height:auto;margin:0 auto 28px;opacity:0;transform:translateY(12px) scale(.97);filter:drop-shadow(0 14px 22px #2434320b)}
+.is-ready .welcome-content>img{animation:welcome-arrive .8s cubic-bezier(.2,.7,.25,1) forwards}
+.welcome-greeting{opacity:0;transform:translateY(8px)}
+.is-ready .welcome-greeting{animation:welcome-arrive .7s .25s ease forwards}
+.welcome-greeting p{font-size:clamp(1.65rem,4vw,2.2rem);line-height:1.2;letter-spacing:-.045em;font-weight:500;margin:0 0 13px}
+.welcome-greeting>span{font-size:.85rem;letter-spacing:.1em;color:#667571}
+.welcome-line{display:block;width:28px;height:1px;margin:28px auto 0;background:#366f61;opacity:0}
+.is-ready .welcome-line{animation:welcome-arrive .6s .5s ease forwards}
+.welcome-skip{position:absolute;bottom:max(28px,env(safe-area-inset-bottom));right:clamp(24px,5vw,72px);border:0;background:transparent;padding:10px 0;font:inherit;font-size:.72rem;letter-spacing:.025em;color:#667571;cursor:pointer}
+.welcome-skip span{margin-left:9px}.welcome-skip:hover{color:#366f61}.welcome-skip:focus-visible{outline:2px solid #366f61;outline-offset:6px;border-radius:2px}
+@keyframes welcome-arrive{to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.welcome-intro{transition:none}.welcome-intro .welcome-content>img,.welcome-intro .welcome-greeting,.welcome-intro .welcome-line{animation:none;opacity:1;transform:none}}
