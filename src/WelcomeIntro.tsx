@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 
 const sessionKey = "zf-welcome-seen";
+const introPreview = import.meta.env.DEV
+  ? new URLSearchParams(window.location.search).get("intro")
+  : null;
 
 export function shouldShowWelcome() {
   if (window.location.hash || new URLSearchParams(window.location.search).has("project")) return false;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
+  if (introPreview === "replay" || introPreview === "hold") return true;
   try { return sessionStorage.getItem(sessionKey) !== "1"; } catch { return true; }
 }
 
@@ -19,7 +23,7 @@ export default function WelcomeIntro({ onComplete }: { onComplete: () => void })
     const escape = (event: KeyboardEvent) => { if (event.key === "Escape") setLeaving(true); };
     window.addEventListener("keydown", escape);
     // A failed or slow image must never block entry to the site.
-    const fallback = window.setTimeout(() => setLeaving(true), 4500);
+    const fallback = introPreview === "hold" ? undefined : window.setTimeout(() => setLeaving(true), 4500);
     return () => {
       document.body.style.overflow = previous;
       window.removeEventListener("keydown", escape);
@@ -28,14 +32,14 @@ export default function WelcomeIntro({ onComplete }: { onComplete: () => void })
   }, []);
 
   useEffect(() => {
-    if (!ready) return;
+    if (!ready || introPreview === "hold") return;
     const timer = window.setTimeout(() => setLeaving(true), 2400);
     return () => window.clearTimeout(timer);
   }, [ready]);
 
   useEffect(() => {
     if (!leaving) return;
-    const timer = window.setTimeout(onComplete, 450);
+    const timer = window.setTimeout(onComplete, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 1500);
     return () => window.clearTimeout(timer);
   }, [leaving, onComplete]);
 

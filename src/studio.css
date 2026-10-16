@@ -147,7 +147,7 @@
 @media(max-width:650px){.detail-result-grid{grid-template-columns:1fr}.detail-example{padding:22px}.detail-results{padding:45px 0}.detail-rail{gap:20px}.detail-result-grid>a{padding:22px}}
 
 /* A quiet, once-per-session greeting using the existing personal mascot. */
-.welcome-intro{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:#f7f8f6;color:#243432;opacity:1;transition:opacity .45s ease;isolation:isolate}
+.welcome-intro{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:#f7f8f6;color:#243432;opacity:1;transition:opacity .6s ease .35s;isolation:isolate}
 .welcome-intro.is-leaving{opacity:0;pointer-events:none}
 .welcome-signature{position:absolute;top:30px;left:clamp(24px,5vw,72px);font-size:.8rem;font-weight:650;letter-spacing:.08em;color:#667571}
 .welcome-content{text-align:center;padding:32px;transform:translateY(-12px)}
@@ -163,3 +163,25 @@
 .welcome-skip span{margin-left:9px}.welcome-skip:hover{color:#366f61}.welcome-skip:focus-visible{outline:2px solid #366f61;outline-offset:6px;border-radius:2px}
 @keyframes welcome-arrive{to{opacity:1;transform:translateY(0) scale(1)}}
 @media(prefers-reduced-motion:reduce){.welcome-intro{transition:none}.welcome-intro .welcome-content>img,.welcome-intro .welcome-greeting,.welcome-intro .welcome-line{animation:none;opacity:1;transform:none}}
+
+/* A curved curtain reveals the page after the mascot's farewell. */
+.welcome-intro{background:transparent;transition:none}
+.welcome-intro::before{content:"";position:absolute;inset:0;z-index:-1;background:#f7f8f6;clip-path:ellipse(150% 150% at 50% -50%)}
+.welcome-intro.is-leaving{opacity:1}
+.welcome-intro.is-leaving::before{animation:welcome-curtain 1.3s .15s cubic-bezier(.76,0,.24,1) both}
+.welcome-intro.is-leaving .welcome-content{animation:welcome-lift .85s cubic-bezier(.22,.61,.36,1) both}
+.welcome-intro.is-leaving .welcome-content>img{animation:welcome-mascot-farewell .8s cubic-bezier(.22,.61,.36,1) both;transform-origin:50% 65%}
+.welcome-intro.is-leaving .welcome-greeting{animation:none;opacity:1;transform:none}
+.welcome-intro.is-leaving .welcome-greeting p{animation:welcome-type-away .55s .06s ease-in both}
+.welcome-intro.is-leaving .welcome-greeting>span{display:inline-block;animation:welcome-type-away .5s .16s ease-in both}
+.welcome-intro.is-leaving .welcome-line{animation:welcome-horizon .7s .08s cubic-bezier(.22,.61,.36,1) both}
+@keyframes welcome-curtain{0%{clip-path:ellipse(150% 150% at 50% -50%)}100%{clip-path:ellipse(100% 0% at 50% 0%)}}
+@keyframes welcome-lift{from{transform:translateY(-12px)}to{transform:translateY(-40px)}}
+@keyframes welcome-mascot-farewell{0%{opacity:1;transform:translateY(0) scale(1) rotate(0);filter:blur(0)}30%{opacity:1;transform:translateY(-5px) scale(1.025) rotate(-2deg);filter:blur(0)}100%{opacity:0;transform:translateY(-30px) scale(.96) rotate(1deg);filter:blur(9px)}}
+@keyframes welcome-type-away{0%{opacity:1;transform:translateY(0);filter:blur(0)}100%{opacity:0;transform:translateY(-12px);filter:blur(5px)}}
+@keyframes welcome-horizon{0%{opacity:1;transform:scaleX(1)}45%{opacity:.55;transform:scaleX(4)}100%{opacity:0;transform:scaleX(7)}}
+@media(prefers-reduced-motion:reduce){.welcome-intro.is-leaving::before,.welcome-intro.is-leaving .welcome-content,.welcome-intro.is-leaving .welcome-content>img,.welcome-intro.is-leaving .welcome-greeting p,.welcome-intro.is-leaving .welcome-greeting>span,.welcome-intro.is-leaving .welcome-line{animation:none}.welcome-intro.is-leaving{opacity:0}}
+
+.welcome-signature,.welcome-skip{transition:opacity .25s ease,transform .35s ease}
+.welcome-intro.is-leaving .welcome-signature,.welcome-intro.is-leaving .welcome-skip{opacity:0;transform:translateY(-4px)}
+@media(prefers-reduced-motion:reduce){.welcome-signature,.welcome-skip{transition:none}}
