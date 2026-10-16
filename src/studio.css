@@ -99,21 +99,21 @@
 /* Stable brand colors throughout the project detail pages. */
 .project-detail .st-nav .st-brand,.project-detail .st-nav .st-brand:visited,.project-detail .st-nav .st-brand:hover,.project-detail .st-nav .st-brand:active{color:var(--ink);text-decoration:none}
 .project-detail .st-nav .st-brand span{color:var(--accent)}
-/* Secondary projects use the full row to keep summaries and tags readable. */
-.st-project:not(.st-featured){grid-column:1 / -1;display:grid;grid-template-columns:210px minmax(0,1fr);align-items:center}
-.st-project:not(.st-featured) .st-project-image{height:148px;min-height:0;padding:12px;margin:20px 0 20px 20px;width:190px;border-radius:9px}
+/* Four compact secondary cards form a two-column grid. */
+.st-project:not(.st-featured){grid-column:auto;display:flex;flex-direction:column;min-width:0}
+.st-project:not(.st-featured) .st-project-image{height:160px;min-height:0;padding:12px;margin:16px 16px 0;width:calc(100% - 32px);border-radius:9px}
 .st-project:not(.st-featured) .st-project-image>span{font-size:.58rem;right:8px;bottom:6px;padding:2px 5px}
-.st-project:not(.st-featured) .st-project-body{padding:22px 26px;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:20px;align-items:center}
-.st-project:not(.st-featured) .st-eyebrow{grid-column:1 / -1;font-size:.58rem;margin-bottom:6px}
-.st-project:not(.st-featured) h3{grid-column:1 / -1;font-size:1.08rem;margin-bottom:7px}
-.st-project:not(.st-featured) .st-project-body>p:not(.st-eyebrow){grid-column:1 / -1;font-size:.8rem;line-height:1.65;margin-bottom:12px}
+.st-project:not(.st-featured) .st-project-body{padding:20px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.st-project:not(.st-featured) .st-eyebrow{font-size:.58rem;margin-bottom:6px}
+.st-project:not(.st-featured) h3{width:100%;font-size:1.08rem;margin-bottom:7px}
+.st-project:not(.st-featured) .st-project-body>p:not(.st-eyebrow){font-size:.8rem;line-height:1.65;margin-bottom:12px}
 .st-project:not(.st-featured) .st-project-contribution{display:none}
-.st-project:not(.st-featured) .st-project-source{grid-column:2;grid-row:4;font-size:.7rem;margin:0;white-space:nowrap}
-.st-project:not(.st-featured) .st-tags{grid-column:1;grid-row:4;gap:5px}
+.st-project:not(.st-featured) .st-project-source{font-size:.7rem;margin:0 0 12px;white-space:nowrap}
+.st-project:not(.st-featured) .st-tags{gap:5px;margin-top:auto}
 .st-project:not(.st-featured) .st-tags span{font-size:.61rem;padding:3px 7px}
-.st-project-case{grid-column:1 / -1;justify-self:start;font-size:.72rem;margin-top:12px}
+.st-project-case{align-self:flex-start;font-size:.72rem;margin-top:12px}
 @media(max-width:650px){
- .st-project:not(.st-featured){grid-template-columns:110px minmax(0,1fr);align-items:start}
+ .st-project:not(.st-featured){display:grid;grid-template-columns:110px minmax(0,1fr);align-items:start}
  .st-project:not(.st-featured) .st-project-image{width:96px;height:110px;margin:18px 0 18px 14px;padding:7px}
  .st-project:not(.st-featured) .st-project-body{padding:18px 16px;display:block}
  .st-project:not(.st-featured) h3{font-size:.95rem;overflow-wrap:anywhere}
