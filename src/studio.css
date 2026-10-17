@@ -185,3 +185,7 @@
 .welcome-signature,.welcome-skip{transition:opacity .25s ease,transform .35s ease}
 .welcome-intro.is-leaving .welcome-signature,.welcome-intro.is-leaving .welcome-skip{opacity:0;transform:translateY(-4px)}
 @media(prefers-reduced-motion:reduce){.welcome-signature,.welcome-skip{transition:none}}
+
+.project-visual-caption{position:absolute;left:12px;top:12px;max-width:min(72%,360px);padding:5px 9px;border:1px solid #ffffff40;border-radius:6px;background:#111b1bd9;color:#f4f5ef;font-size:.58rem;line-height:1.45;text-align:left;letter-spacing:.01em;box-shadow:0 4px 15px #0002}
+.st-project:not(.st-featured) .project-visual-caption{left:8px;top:8px;max-width:82%;font-size:.53rem;padding:4px 6px}
+.detail-hero-image .project-visual-caption{left:12px;top:12px}

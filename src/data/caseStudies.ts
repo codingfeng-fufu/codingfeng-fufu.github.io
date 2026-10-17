@@ -8,7 +8,7 @@ export type CaseStudy = {
 };
 const repo = (name: string) => `https://github.com/codingfeng-fufu/${name}`;
 
-// Reviewed against repository READMEs and implementation files on 2026-10-16.
+// Reviewed against repository READMEs, available screenshots, and implementation files on 2026-10-17.
 // Reported evaluations retain their original scope; no project benchmarks were rerun.
 export const caseStudies: Record<string, CaseStudy> = {
   "技术雷达知识库": {
@@ -18,9 +18,9 @@ export const caseStudies: Record<string, CaseStudy> = {
       { eyebrow: "THE IMPLEMENTATION", title: "Build the workspace from portable Markdown.", text: "RadarLoom keeps Markdown pages and explicit [[wikilinks]] as the source of truth. Python scripts generate search indexes and relationship graphs. Leiden discovers communities from links between knowledge pages; optional model-generated names summarize those fixed communities without changing their membership. Interview pages, project pages, and maps of content stay outside the knowledge-community graph." },
       { eyebrow: "THE OUTCOME", title: "Read a page, follow its links, explore its community.", text: "The local Viewer brings together search, LaTeX, Mermaid, favorites, reading history, and exports. A graph workbench supports community drill-down, while paper notes and Idea Lab have dedicated views. Indexes, community summaries, and graph artifacts can be regenerated from files, so the workspace remains usable independently of the optional Claude integration." },
     ],
-    example: { title: "From a paper note to related concepts", input: "Read a paper and add a concept page with source metadata and [[wikilinks]].", steps: ["Rebuild page indexes and resolve explicit references.", "Discover communities from eligible knowledge-page links.", "Open the Viewer, then drill into a community and its member pages."], output: "A searchable page with a source record, navigable links, and graph context. This is a representative workflow, not a recorded run." },
+    example: { title: "From a concept page to its knowledge community", input: "Create a knowledge page in pages/ with source metadata and explicit [[wikilinks]] to related concepts.", steps: ["Rebuild page indexes and resolve explicit references.", "Discover communities from eligible knowledge-page links.", "Open the Viewer, then drill into a community and its member pages."], output: "A searchable page with a source record, navigable links, and graph context. This is a representative workflow, not a recorded run." },
     results: [
-      { value: "4", label: "Connected workspaces", context: "Knowledge pages, interview preparation, paper notes, and Idea Lab.", href: repo("radar-loom") + "#workspaces" },
+      { value: "4", label: "Separate workspaces", context: "Knowledge pages, interview preparation, paper notes, and Idea Lab.", href: repo("radar-loom") + "#workspaces" },
       { value: "Leiden", label: "Link-based communities", context: "Membership comes from explicit page links; generated names cannot change it.", href: repo("radar-loom") + "/blob/master/scripts/community_graph.py" },
       { value: "Rebuildable", label: "Indexes and graph artifacts", context: "Documented build, health-check, backup, and CI workflows.", href: repo("radar-loom") + "#testing-and-ci" },
     ],
@@ -52,11 +52,11 @@ export const caseStudies: Record<string, CaseStudy> = {
     ],
     example: { title: "Inspect why a relation did not enter the graph", input: "Index a directory of research documents, then ask a question over the resulting corpus.", steps: ["Extract candidate entities and triples with source chunk IDs.", "Resolve names, align relations, and retain accepted and rejected candidates.", "Ask with graph/text evidence, then inspect rejected triples and the run summary."], output: "A cited answer plus graph artifacts and rejection reasons that can be inspected separately. The default offline path uses mock extraction and answering." },
     results: [
-      { value: "459", label: "Tests reported passed", context: "README release gate reports 459 passed and 4 skipped for the offline path.", href: repo("OpenFusionKGQA") + "#current-status" },
-      { value: "78/100", label: "HotpotQA real100 cases passed", context: "Repository-reported isolated sample: EM 0.60, token F1 0.7083; not a full-dataset score.", href: repo("OpenFusionKGQA") + "#current-status" },
+      { value: "459", label: "Tests reported passed", context: "The README reports 459 passed and 4 skipped in its offline release gate; this portfolio did not rerun the suite.", href: repo("OpenFusionKGQA") + "#current-status" },
+      { value: "78/100", label: "HotpotQA real100 cases passed", context: "The README reports an isolated 100-question sample: EM 0.60, token F1 0.7083; not a full-dataset score.", href: repo("OpenFusionKGQA") + "#current-status" },
       { value: "1.0", label: "Support recall on real100", context: "Reported for the same sample; stronger retrieval does not guarantee correct answer selection.", href: repo("OpenFusionKGQA") + "#current-status" },
     ],
-    scope: "A beta prototype. Structured-output parsing and answer selection remain areas for improvement. Results here are repository-reported evaluations, not reruns for this website.",
+    scope: "A beta prototype. The portfolio cover is a concept mockup; its dashboard metrics and Apple example are illustrative, not repository output. Structured-output parsing and answer selection remain areas for improvement. Evaluation values are repository-reported, not reruns for this website.",
     sources: [{ label: "Release status & evaluation scope", href: repo("OpenFusionKGQA") + "#current-status" }, { label: "Fusion and rejection logic", href: repo("OpenFusionKGQA") + "/blob/main/graphrag_v2/graph_fusion/fusion.py" }, { label: "Scoring formula", href: repo("OpenFusionKGQA") + "/blob/main/graphrag_v2/graph_fusion/triple_scoring.py" }],
   },
   "LLM Wiki": {
@@ -86,7 +86,7 @@ export const caseStudies: Record<string, CaseStudy> = {
     results: [
       { value: "2,051", label: "Indexed document chunks", context: "The README evaluation snapshot uses the FAISS backend.", href: repo("agent-learning-assistant") + "#当前评估摘要" },
       { value: "30/30", label: "Retrieval smoke cases", context: "Repository-reported retrieval checks; separate from end-to-end answer quality.", href: repo("agent-learning-assistant") + "#当前评估摘要" },
-      { value: "0.8604", label: "Answer relevancy average", context: "Repository-reported RAGAS result for retrieval-required questions; faithfulness average 1.0000.", href: repo("agent-learning-assistant") + "#当前评估摘要" },
+      { value: "0.8604", label: "Answer relevancy average", context: "README snapshot for retrieval-required questions: faithfulness 1.0000; neither metric measures learning gains.", href: repo("agent-learning-assistant") + "#当前评估摘要" },
     ],
     scope: "A desktop-first learning prototype. Reported RAGAS averages cover questions requiring retrieval and do not measure learning gains. Model-backed chat requires a configured provider.",
     sources: [{ label: "Workbench & evaluation snapshot", href: repo("agent-learning-assistant") }, { label: "Planning graph", href: repo("agent-learning-assistant") + "/blob/main/planning/planner_graph.py" }, { label: "Long-term memory", href: repo("agent-learning-assistant") + "/blob/main/memory/memory_manager.py" }],

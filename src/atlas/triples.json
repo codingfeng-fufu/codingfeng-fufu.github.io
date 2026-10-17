@@ -80,7 +80,7 @@
   {
     "subject": "RadarLoom",
     "predicate": "has type",
-    "object": "Personal Research Knowledge Base",
+    "object": "Local-first Technical Knowledge Workspace",
     "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
   },
   {
@@ -116,7 +116,7 @@
   {
     "subject": "RadarLoom",
     "predicate": "uses mechanism or technology",
-    "object": "Claude Code Workflows",
+    "object": "Optional Claude Code Integration",
     "source": "https://codingfeng-fufu.github.io/?view=studio&project=radarloom"
   },
   {
